@@ -134,6 +134,7 @@ button:hover {
     height: 550px;
     width: 100%;
     background-color: #000;
+    transition: transform 1.s ease-in-out;
 }
 
 .carousel-item img {
@@ -211,43 +212,5 @@ footer p {
     to {
         opacity: 1;
         transform: translateY(0);
-    }
-}
-
-@keyframes fadeInOut {
-    0% {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-
-    10% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-
-    90% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-
-    100% {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-}
-
-@media (max-width: 600px) {
-    body {
-        font-size: 1rem;
-    }
-
-    .heart {
-        font-size: 4.375rem;
-    }
-
-    .mensagem,
-    .mensagemEspecial,
-    .mensagemTempo {
-        font-size: 1rem;
     }
 }
