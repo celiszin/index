@@ -61,7 +61,7 @@ function Juntos() {
 function TempoDeAmor() {
     esconderMensagens();
     const mensagemTempo = document.getElementById("mensagemTempo");
-    const dataInicio = new Date("2024-02-01T19:24:00");
+    const dataInicio = new Date("2025-10-03T12:20:00");
     const agora = new Date();
     const diff = agora - dataInicio;
 
