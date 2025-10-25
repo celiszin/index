@@ -10,6 +10,7 @@ function esconderMensagens() {
     document.getElementById("mensagemEspecial").style.display = "none";
     document.getElementById("mensagemTempo").style.display = "none";
     document.getElementById("declaracaoamor").style.display = "none";
+    document.getElementById("mensagemjuntos").style.display = "none";
 }
 
 function tocarMusica() {
@@ -17,7 +18,7 @@ function tocarMusica() {
     const mensagem = document.getElementById("declaracaoamor");
     mensagem.style.display = "block";
 
-    pararTodasAsMusicas(); 
+    pararTodasAsMusicas();
     const audio = document.getElementById("musica1");
     audio.currentTime = 0;
     audio.play().catch(() => {
@@ -28,9 +29,9 @@ function tocarMusica() {
 }
 
 function MsgTexto() {
-    esconderMensagens(); 
+    esconderMensagens();
     const mensagem = document.getElementById("mensagemEspecial");
-    mensagem.style.display = "block"; 
+    mensagem.style.display = "block";
 
     pararTodasAsMusicas();
     const audio = document.getElementById("musica2");
@@ -40,6 +41,22 @@ function MsgTexto() {
         audio.pause();
     }, 300000);
 }
+
+function Juntos() {
+    esconderMensagens();
+    const mensagem = document.getElementById("mensagemjuntos");
+    mensagem.style.display = "block";
+
+    pararTodasAsMusicas();
+    const audio = document.getElementById("musica4");
+    audio.currentTime = 0;
+    audio.play().catch(() => {
+    });
+    setTimeout(() => {
+        audio.pause();
+    }, 300000);
+}
+
 
 function TempoDeAmor() {
     esconderMensagens();
@@ -55,7 +72,7 @@ function TempoDeAmor() {
     mensagemTempo.innerHTML = `
         Sempre quis conversar com você desde a Etec, do dia que te vi pela primeira vez, mas comecei a AMAR UM MONTÃO TIPO UM MONTÃO PRA CARALHO, DÁ NEM PRA TE FALAR, MUITO MAIOR QUE EU quando começamos a nos falar, ou pra ficar melhor pra minha linda pessoinha: <strong>${dias}</strong> dias, <strong>${horas}</strong> horas e <strong>${minutos}</strong> minutos! 💘
     `;
-    mensagemTempo.style.display = "block"; 
+    mensagemTempo.style.display = "block";
 
     pararTodasAsMusicas();
     const audio = document.getElementById("musica3");

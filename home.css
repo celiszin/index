@@ -43,7 +43,7 @@ body {
     margin-bottom: 0.625rem;
     -webkit-text-stroke: 1px var(--cor-fundo);
     border-top: 1.5px solid black;
-    
+
 }
 
 p strong {
@@ -75,7 +75,8 @@ h2 {
 
 .mensagemEspecial,
 .mensagemTempo,
-.declaracaoamor {
+.declaracaoamor,
+.mensagemjuntos {
     display: none;
     border-top: 1px solid var(--cor-texto-principal);
     margin: 1.25rem auto 0;
@@ -213,4 +214,12 @@ footer p {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+
+.moes{
+    width: 350px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 20px;
 }
